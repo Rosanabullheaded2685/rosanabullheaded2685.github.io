@@ -2,54 +2,58 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: Dr. Alex Johnson
-  given: Alex
-  family: Johnson
+  display: Abraham Betancourt Vera
+  given: Abraham
+  family: Betancourt Vera
   alternate: ''  # Example: 王伟
   pronunciation: ''  # Example: Wáng Wěi
-  pronouns: he/him
+  pronouns: ''
 postnominals:
   - PhD
   - MIEEE
 status:
   icon: "☕️"
-role: Senior AI Research Scientist
+role: Postdoctoral Scholar 
 bio: |
-  Alex Johnson is a Senior AI Research Scientist at Meta AI. His research
-  has been published in top conferences like NeurIPS and ICML, with over
-  10,000 citations. Alex is passionate about pushing the boundaries of AI
-  while ensuring ethical development.
+ I am a Postdoctoral Research Scholar in the Richard Andersen Laboratory at Caltech. I have a PhD in
+ biomedical sciences.
+ 
+ My research focuses on the neural mechanisms underlying motor and cognitive processes and on the development
+ of brain–computer interfaces. I investigate these questions using large-scale intracortical recordings
+ from Utah arrays implanted in the motor and posterior parietal cortices of individuals with tetraplegia.
+
 
 affiliations:
-  - name: Meta AI
+  - name: Caltech
     url: https://ai.meta.com/
 
 links:
   - icon: at-symbol
-    url: mailto:alex.johnson@example.com
+    url: mailto:azahel90@caltech.edu
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=H6bjByAAAAAJ&hl=en&oi=ao
+  - icon: academicons/orcid
+    url: https://orcid.org/0000-0001-8840-527X
     label: E-mail Me
   - icon: brands/x
-    url: https://x.com/example
+    url: https://x.com/Abraham_btk
   - icon: brands/github
     url: https://github.com/example
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/example/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=example
-  - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - Brain-computer interfaces
+  - Human intracortical neurophysiology
+  - Motor and cognitive neuroscience
+  - Posterior parietal cortex
+  - Neural decoding
 
 education:
-  - degree: PhD Computer Science
-    institution: Stanford University
-    start: 2015-09-01
-    end: 2019-06-30
+  - degree: PhD in Biomedical Sciences
+    institution: National Autonomous University of Mexico
+    start: 2016-01-05
+    end: 2023-04-22
     summary: |
       Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
     button:
